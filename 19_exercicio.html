@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p>Digite o raio</p>
+   <input type="number" name="" id="">
+   <p id="resultado"></p>
+   <script>
+    let input = document.querySelector('input');
+    let resultado = document.querySelector('#resultado');
+    input.addEventListener("change", function(){
+         let raio = Number(input.value);
+         resultado.textContent = 'A area da circunferencia é ' + raio * raio * 3.14;
+    })
+   </script>
+</body>
+</html>

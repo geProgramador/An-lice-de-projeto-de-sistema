@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubo</title>
+</head>
+<body>
+    <p>Digite u numero</p> 
+    <input type="number" name="id=">
+    <p id="resultado"></p>
+    <script>
+        let input = document.querySelector('input');
+        let resultado = document.querySelector('#resultado');
+        input.addEventListener('change',function(){
+            resultado.textContent = 'O cubo do numero é' + Number(input.value) ** 3;
+
+        })
+    </script>
+    
+</body>
+</html>

@@ -18,6 +18,9 @@
     <p>Digite o valor em reais (para Peso Argentino)</p>
     <input type="number" id="pesoCaixa" />
     <p id="resultadoPeso"></p>
+     <p>Digite o valor em reais (para Rublo)</p>
+    <input type="number" id="rubloCaixa" />
+    <p id="resultadoRublo"></p>
     <script>
         let dolar = document.querySelector('#dolarCaixa');
         let resultadoDolar = document.querySelector('#resultadoDolar');
@@ -38,6 +41,11 @@
         let resultadopeso = document.querySelector('#resultadoPeso');
         peso.addEventListener('change',function(){
             resultadopeso.textContent='o valor em pesos é '+ Number(this.value) / 0.00066;
+        });
+        let rublo = document.querySelector('#rubloCaixa');
+        let resultadorublo = document.querySelector('#resultadoRublo');
+        rublo.addEventListener('change',function(){
+            resultadorublo.textContent='o valor em rublos é '+ Number(this.value) / 0.062;
         });
 
     </script>
