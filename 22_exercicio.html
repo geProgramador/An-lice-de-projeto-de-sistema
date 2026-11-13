@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="pt-BR">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+</head>
+<body>
+    <h1></h1>
+    <button onClick="Executar()">Começar/Continuar/Parar</button>
+    <script>
+        let h1 = document.querySelector('h1');
+        let ligado = false;
+        let tempo = 0;
+        let interval;
+        function Executar(){
+            if (!ligado) {
+                interval = setInterval(function(){
+                h1.textContent = tempo++;
+                },1000);
+                ligado = true;   
+            }else {
+                clearInterval(interval);
+                ligado = false;
+            }
+        }
+    </script>
+</body>
+</html>

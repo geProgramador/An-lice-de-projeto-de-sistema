@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale.0">
+<title>Imprimir</title>
+<body>
+    <h1></h1>
+    <script>
+        let h1 = document.querySelector('h1');
+        let resultado ="";
+        for(let i = 0;i <= 5;i++){ 
+            for(let y = 0;y < i;y++){
+                resultado += '🎄';
+            }
+           resultado +='<br>';
+        }
+        
+        
+        for(let w = 6;w > 0; w--){
+            for(let u = 0; u < w;u++){
+                resultado += '🎄';
+            }
+            resultado += '<br>';
+        }
+        h1.innerHTML = resultado;
+    </script>
+</body>
+</html>

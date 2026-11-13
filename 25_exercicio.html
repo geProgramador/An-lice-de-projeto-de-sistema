@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Numero</h1>
+    <input type="number" id="numero">
+    <br>
+    <p></p>
+    <script>
+        let numero = document.querySelector('#numero');
+        let p = document.querySelector('p');
+        numero.addEventListener('change',function(){
+            for(let i = 1; i <= 10;i++){
+                p.innerHTML += numero.value + ' x ' + i + ' = ' + Number(numero.value) * i + '<br>'
+            }
+             for(let i = 1; i <= 10;i++){
+                p.innerHTML += numero.value + ' / ' + i + ' = ' + (Number(numero.value) / i).toFixed(2)  + '<br>'
+             }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frase</title>
+</head>
+<body>
+    <h3>Nome</h3>
+    <input type="text" id="nome">
+    <h3>Sobrenome</h3>
+    <input type="text" id="sobrenome">
+    <h3>Idade</h3>
+    <input type="text" id="idade">
+    <br><br>
+    <button>calcular</button>
+    <h1></h1>
+    <script>
+        let nome = document.querySelector('#nome');
+        let sobrenome = document.querySelector('#sobrenome');
+        let idade = document.querySelector('#idade');
+        let resultado = document.querySelector('h1');
+        let calcular = document.querySelector('button');
+        calcular.addEventListener('click', function(){
+        resultado.textContent = 'Eu sou' + nome.value + '' + sobrenome.value + ' e tenho ' + idade.value + ' anos. '
+        })
+    </script>
+
+</body>
+</html>
